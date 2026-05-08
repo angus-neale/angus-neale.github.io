@@ -1,4 +1,4 @@
-const BASE = '/angus-neale.io';
+const BASE = '';
 
 async function renderWriting() {
   const res = await fetch(BASE + '/data/writing.json');
