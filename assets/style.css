@@ -221,6 +221,70 @@ a.writing-item:hover .writing-title {
   max-width: 325px;
 }
 
+/* Tools */
+
+#tools {
+  margin-bottom: 3rem;
+}
+
+.tool-card {
+  margin-top: 1.25rem;
+}
+
+.tool-preview {
+  display: block;
+  position: relative;
+  width: 320px;
+  height: 540px;
+  border: 1px solid var(--faint);
+  border-radius: 4px;
+  overflow: hidden;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.tool-preview iframe {
+  width: 320px;
+  height: 540px;
+  border: none;
+  pointer-events: none;
+}
+
+.tool-preview-badge {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(255, 255, 255, 0.92);
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.04em;
+  padding: 4px 8px;
+  border-radius: 3px;
+  color: var(--ink);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  pointer-events: none;
+  transition: background 0.15s, color 0.15s;
+}
+
+.tool-preview:hover .tool-preview-badge {
+  background: var(--accent);
+  color: #fff;
+}
+
+.tool-title {
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: 0.98rem;
+  margin: 0.75rem 0 0.25rem;
+}
+
+.tool-desc {
+  font-size: 0.82rem;
+  color: var(--mid);
+  font-style: italic;
+  margin: 0;
+}
+
 /* Contact */
 
 #contact {
